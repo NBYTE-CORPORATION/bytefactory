@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #353535;
+  color: #BFBFBF;
+}
+
+/* 라이트 모드 스타일 */
+body.dark-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #353535;
+    color: #BFBFBF;
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  white-space: pre-wrap; /* 공백과 줄바꿈을 보존하면서 필요에 따라 자동 줄바꿈 */
+  overflow-wrap: break-word; /* 단어가 너무 길어서 영역을 넘칠 때 단어 내에서 줄바꿈 */
+  background-color: #6b6767;
+  color: rgb(219, 202, 202);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  margin: 0px;
+  padding: 0px;
+}

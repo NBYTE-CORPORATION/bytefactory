@@ -1,0 +1,46 @@
+.sidebar {
+  width: 0;
+  height: calc(100% - 0px); /* 헤더 높이에 맞게 조정 */
+  position: fixed;
+  z-index: 1;
+  top: 73px; /* 헤더 높이에 맞춰 조정 */
+  left: 0;
+  background-color: #363030; /* 슬랙의 사이드바 색상 */
+  overflow-x: hidden;
+  transition: width 0.3s;
+}
+
+.sidebar.open {
+  width: 190px; /* 사이드바가 열릴 때의 너비를 넓게 조정 */
+}
+
+.sidebar-item {
+  padding: 8px 16px; /* 좌우 패딩을 넣어 텍스트에 여백을 제공 */
+  text-decoration: none;
+  font-size: 16px; /* 폰트 사이즈 조정 */
+  color: white;
+  display: block;
+  border-bottom: 1px solid #473d3d; /* 각 항목을 구분짓는 선 추가 */
+  transition: background-color 0.3s;
+}
+
+.click-item {
+  background-color: #000000;
+}
+
+.sidebar-item:hover {
+  background-color: #221d1d; /* 호버 색상 변경 */
+  cursor: pointer;
+}
+
+/* 텍스트 레이블이 보이도록 설정 */
+.sidebar-item span {
+  display: block;
+}
+
+/* 텍스트 레이블이 있는 경우 */
+.sidebar-item span {
+  white-space: nowrap; /* 텍스트가 사이드바 너비를 넘어가지 않도록 설정 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+}

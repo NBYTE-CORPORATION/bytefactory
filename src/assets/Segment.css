@@ -1,0 +1,22 @@
+.segment {
+  position: relative;
+}
+
+.segment0,
+.segment3,
+.segment6 {
+  position: absolute;
+  background-color: #292727;
+}
+
+.segment1,
+.segment2,
+.segment4,
+.segment5 {
+  position: absolute;
+  background-color: #292727;
+}
+
+.segment-on {
+  background-color: #00fff7;
+}

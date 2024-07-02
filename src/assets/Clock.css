@@ -1,0 +1,11 @@
+.clock {
+  position: relative;
+}
+
+.clock-up,
+.clock-down,
+.clock-left,
+.clock-right {
+  position: absolute;
+  background-color: #00fff7;
+}

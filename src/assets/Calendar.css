@@ -1,0 +1,207 @@
+.top-calendar {
+  padding-top: 4px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top-calendar-input {
+  position: absolute;
+  top: 15px;
+  width: 183px;
+  height: 50px;
+  opacity: 0;
+}
+
+.top-calendar-input[type="month"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+
+  width: 183px;
+  height: 50px;
+  display: block;
+}
+
+.top-calendar-left-div {
+  display: flex;
+}
+
+.top-calendar h1 {
+  margin: 17px 0px 7px 0px;
+}
+
+.year-bookmark-button {
+  margin: 25px 0px 0px 10px;
+  background: white;
+  color: #353535;
+  width: 32px;
+  height: 32px;
+}
+
+.control-calendar {
+  margin-right: 20px;
+}
+
+.control-calendar button {
+  background: white;
+  color: #353535;
+  width: 32px;
+  height: 32px;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  margin-left: 3px;
+}
+
+.control-calendar button:first-child {
+  margin-right: 2px;
+}
+
+.cld-table {
+  width: 100%;
+  border-collapse: collapse;
+  user-select: none; /* 표준 문법 */
+}
+
+.cld-table th,
+td {
+  padding: 0px;
+  width: calc(100% / 7);
+  border: 1px solid white;
+}
+
+.cld-table {
+  height: 700px;
+  width: calc(100% - 20px);
+}
+
+.cld-table td {
+  width: 200px;
+  height: 100px;
+}
+
+.cld-table th {
+  padding: 1px 0px 2px 8px;
+  color: white;
+  font-size: x-large;
+}
+
+.weekend .label-day {
+  color: red;
+}
+
+.holiday .label-day {
+  color: red;
+}
+
+.cdl-day {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cdl-top {
+  padding: 1px 0px 2px 8px;
+  background-color: white;
+  font-size: large;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekend .cdl-top {
+  color: red;
+}
+
+.prev-month {
+  opacity: 0.5;
+}
+
+.next-month {
+  opacity: 0.5;
+}
+
+.cdl-body {
+  height: 100%;
+  font-size: large;
+}
+
+.new-day {
+  height: 23px;
+  margin: 4px 0px;
+}
+
+.new_line {
+  height: 18px;
+  padding: 2px 0px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.all_line {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.body_line,
+.last_line {
+  padding-left: 10px;
+}
+
+.first_line {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.first_line,
+.body_line {
+  width: 102%;
+}
+
+td:last-child .cdl-day .cdl-body .new-day .first_line,
+td:last-child .cdl-day .cdl-body .new-day .body_line {
+  width: auto;
+}
+
+.prev-month .cdl-day .cdl-body .new-day .first_line,
+.prev-month .cdl-day .cdl-body .new-day .body_line {
+  width: auto;
+}
+
+.next-month .cdl-day .cdl-body .new-day .first_line,
+.next-month .cdl-day .cdl-body .new-day .body_line {
+  width: auto;
+}
+
+.last_line {
+  margin-right: 20px;
+}
+
+.day-top-view {
+  display: flex;
+  font-size: 15px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.day-top-line-view {
+  padding: 0px 2px;
+  display: flex;
+}
+
+.line-text {
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.line-text input {
+  font-weight: bold;
+}
+
+.today {
+  background-color: #574e4e;
+}

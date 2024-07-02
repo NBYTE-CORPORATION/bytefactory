@@ -1,0 +1,47 @@
+.input-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-div input {
+  margin-top: 20px;
+  padding: 15px 60px 10px 60px;
+  height: 40px;
+  width: 500px;
+  border-radius: 30px;
+  outline: none;
+  font-size: 30px;
+}
+
+.outter-div {
+  user-select: none; /* 표준 문법 */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  height: 600px;
+  margin-top: 50px;
+  padding: 20px 0px;
+}
+.rendersite {
+  background-color: #3c4e51;
+  border-radius: 25px;
+  border: 2px solid #78777e;
+}
+
+.rendersite-ul-div {
+  color: #f8eeee;
+}
+
+.rendersite-ul-div ul {
+  list-style-type: none;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.rendersite-p {
+  color: white;
+  font-size: 20px;
+}
