@@ -1,0 +1,48 @@
+.div_queryConversion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.div_queryConversion > .div_top {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.div_tbl {
+  margin-left: 2px;
+  margin-bottom: 10px;
+}
+
+.div_queryConversion > .div_bottom {
+  height: 750px;
+  margin-top: 10px;
+  margin-left: 40px;
+
+  display: flex;
+}
+
+.tar_left {
+  width: 45%;
+  height: 95%;
+}
+
+.tar_right {
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 45%;
+  height: 95%;
+}
+
+.div_tbl input {
+  padding-left: 5px;
+  height: 21px;
+  font-size: 15px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.div_queryConversion_1 textarea {
+  resize: none;
+}

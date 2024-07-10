@@ -72,6 +72,18 @@ const Sidebar = ({ isOpen, setHeaderTitle, headerTitle }) => {
         {/* 이곳에 메시지 아이콘 SVG 또는 Font Awesome 아이콘을 사용할 수 있습니다 */}
         <span>사이트모음</span>
       </div>
+      <div
+        className={
+          headerTitle === "QueryConversion"
+            ? "sidebar-item click-item"
+            : "sidebar-item"
+        }
+        onClick={() => handleItemClick("/QueryConversion", "QueryConversion")}
+      >
+        <i className="icon-messages"></i>{" "}
+        {/* 이곳에 메시지 아이콘 SVG 또는 Font Awesome 아이콘을 사용할 수 있습니다 */}
+        <span>쿼리변환</span>
+      </div>
       {/* 추가적인 사이드바 아이템들을 여기에 구성할 수 있습니다 */}
     </div>
   );

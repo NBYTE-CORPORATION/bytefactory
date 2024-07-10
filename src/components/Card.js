@@ -10,6 +10,7 @@ const Card = ({ No, title, description }) => {
       3: "image3",
       4: "image4",
       5: "image5",
+      6: "image6",
     };
 
     if (No == null) {

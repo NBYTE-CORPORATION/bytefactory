@@ -21,6 +21,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import "./App.css";
 import logo from "./assets/imgs/logo.png";
 import SiteCollection from "./pages/SiteCollection";
+import QueryConversion from "./pages/QueryConversion";
 
 const App = () => {
   const [showUpdateConfirmModal, setShowUpdateConfirmModal] = useState(false);
@@ -177,6 +178,16 @@ const App = () => {
                   description="개발 관련 사이트들을 모은 프로그램입니다."
                 />
               </Link>
+              <Link
+                to="/QueryConversion"
+                onClick={() => handleCardClick("QueryConversion")}
+              >
+                <Card
+                  No="6"
+                  title="QueryConversion"
+                  description="텍스트를 받아서 쿼리로 만들어주는 프로그램입니다."
+                />
+              </Link>
               <Modal show={showModal} onClose={handleCloseModal}>
                 <p>서비스 준비 중입니다! &gt;.&lt;</p>
               </Modal>
@@ -190,6 +201,7 @@ const App = () => {
               <Route path="/BookMark" element={<BookMark />} />
               <Route path="/Calendar" element={<Calendar />} />
               <Route path="/SiteCollection" element={<SiteCollection />} />
+              <Route path="/QueryConversion" element={<QueryConversion />} />
             </Routes>
           )}
         </div>
