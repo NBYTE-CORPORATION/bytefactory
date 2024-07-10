@@ -16,6 +16,11 @@ function QueryConversion() {
   }, [tbl, selectedValue, leftTarValue]);
 
   const change = function (text) {
+    if (tbl.length === 0) {
+      setRightTarValue("");
+      return;
+    }
+
     if (text.length === 0) {
       setRightTarValue("");
       return;
